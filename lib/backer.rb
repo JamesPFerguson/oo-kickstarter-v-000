@@ -14,7 +14,7 @@ class Backer
 
   def back_project(project)
     self.backed_projects << project
-    Project.projects
+    Project.projects.find {|project| project.title == project} << self
   end
 
 
