@@ -16,6 +16,10 @@ class Project
       self.backers << backer
     end
 
+    def projects
+      @@projects
+    end
+
 
 
 end
