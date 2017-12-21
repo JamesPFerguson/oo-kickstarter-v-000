@@ -1,3 +1,5 @@
+require_relative 'project.rb'
+
 class Backer
 
   attr_accessor :name, :backed_projects
@@ -9,6 +11,7 @@ class Backer
 
   def back_project(project)
     self.backed_projects << project
+
   end
 
 
